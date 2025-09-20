@@ -1,6 +1,6 @@
 import angr
 
-# Шлях до вашого бінарника
+# Шлях до бінарника
 binary_path = "binaries/main_ETS.exe"
 
 # Створюємо angr-проєкт
