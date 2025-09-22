@@ -1,0 +1,114 @@
+{
+  "source_file": "/mnt/data/ab8dbaf7-871a-4337-bba4-c1551308725d.c",
+  "analysis_kind": "source-level (no binary addresses)",
+  "functions": [
+    {
+      "name": "read_int",
+      "start_line": 6,
+      "end_line": 18,
+      "call_count": 5,
+      "calls": [
+        {
+          "name": "printf",
+          "line": 10,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "scanf",
+          "line": 11,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "getchar",
+          "line": 12,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "printf",
+          "line": 15,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "getchar",
+          "line": 16,
+          "library": "stdio",
+          "conditional": null
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "start_line": 20,
+      "end_line": 48,
+      "call_count": 7,
+      "calls": [
+        {
+          "name": "Sleep",
+          "line": 28,
+          "library": "kernel32",
+          "conditional": "_WIN32"
+        },
+        {
+          "name": "GetSystemTimeAsFileTime",
+          "line": 29,
+          "library": "kernel32",
+          "conditional": "_WIN32"
+        },
+        {
+          "name": "printf",
+          "line": 30,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "printf",
+          "line": 34,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "printf",
+          "line": 43,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "printf",
+          "line": 45,
+          "library": "stdio",
+          "conditional": null
+        },
+        {
+          "name": "getchar",
+          "line": 46,
+          "library": "stdio",
+          "conditional": null
+        }
+      ]
+    }
+  ],
+  "libraries": [
+    {
+      "name": "stdio (standard C)",
+      "functions": [
+        "scanf",
+        "printf",
+        "getchar"
+      ],
+      "linkage": "dynamic (typical)"
+    },
+    {
+      "name": "kernel32 (Windows)",
+      "functions": [
+        "Sleep",
+        "GetSystemTimeAsFileTime"
+      ],
+      "linkage": "dynamic",
+      "conditional": "_WIN32"
+    }
+  ]
+}
